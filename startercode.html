@@ -11,13 +11,44 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <div class="main-container">
-        <header></header>
+        <header>
+            <img src="images/logo/Booki.png" alt="Logo Booki">
+            <nav>
+                <ul class="menu">
+                    <li class="selected">Hébergements</li>
+                    <li>Activités</li>
+                </ul>
+            </nav>
+        </header>        
         <main>
+            <section>
+                <div class="Titre">
+                    <p>
+                        <h2><strong>Trouvez votre hébergement pour des vacences de rêve</strong></h2>
+                        <h4>En plein centre-ville ou pleine nature</h4>
+                    </p>
+                </div>
+                <div class="logo-localisation">
+                    <div class="input-container">
+                        <div class="logo-placeholder">
+                            <i class="fa-solid fa-location-dot fa-2xl"></i>
+                        </div>
+                        <div class="zone-texte">
+                            <div class="bouton-recherche">
+                                <input type="text" id="search" placeholder="Marseille, France">
+                                <button type="button" id="search-button">Rechercher</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                                
+            </section>
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
 
@@ -30,7 +61,7 @@
                     <div class="populaires-cards">
                         <a href="#">
                             <article class="card">
-                                <img src="./images/hebergements/emile-guillemot.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                                <img src="images/heberegements/emile-guillemot.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                                 <div class="card-content">
                                     <div class="card-txt">
                                         <h3 class="card-title">Hôtel Le soleil du matin</h3>
@@ -49,7 +80,7 @@
                         </a>
                         <a href="#">
                             <article class="card">
-                                <img src="./images/hebergements/aw-creative.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                                <img src="images/heberegements/aw-creative.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                                 <div class="card-content">
                                     <div class="card-txt">
                                         <h3 class="card-title">Chambres d’hôtes Au cœur de l’eau</h3>
@@ -68,7 +99,7 @@
                         </a>
                         <a href="#">
                             <article class="card">
-                                <img src="./images/hebergements/febrian-zakaria2.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                                <img src="images/heberegements/febrian-zakaria2.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                                 <div class="card-content">
                                     <div class="card-txt">
                                         <h3 class="card-title">Hôtel Bleu et Blanc</h3>
