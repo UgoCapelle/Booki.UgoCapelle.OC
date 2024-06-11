@@ -3,6 +3,10 @@
     font-family: 'Raleway', sans-serif;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 :root {
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
@@ -138,7 +142,7 @@ header {
 }
 
 .loupe {
-    scale: 0;
+    display: none;
 }
 
 .main-container {
@@ -380,6 +384,7 @@ a {
 }
 
 .activites-title {
+    margin-left: 30px;
     justify-content: space-between;
     align-items: center;
 }
@@ -389,7 +394,8 @@ a {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    gap: 6%;
+    gap: 5%;
+    margin-left: 30px;
 }
 
 
@@ -512,12 +518,12 @@ footer li {
 
     .activites-title {
         margin-left: 3%;
+        padding-bottom: 20px;
     }
     .activites-cards {
         gap: 8%;
-        margin-left: 1%;
+        margin-left: 4%;
         max-height: 400px;
-        padding-bottom: 6%;
     }
     .activites-cards .card {
         max-height: 400px;
@@ -538,7 +544,6 @@ footer li {
     }
     
     .footer {
-        margin-top: 100px;
         gap: 16%;
     }
 }
@@ -717,7 +722,9 @@ footer li {
 
 
         .loupe {
-            scale: 100%;
+            display: block;
+    width: 20px;
+    height: 20px;
         }
 
 
@@ -725,11 +732,18 @@ footer li {
             content: "\f002";
             margin-left: -245%;
             color: #F2F2F2;
+            position: relative;
           }
 
         .boutons-filtre li {
             margin-bottom: 20px;
             min-width: 125px;
+        }
+
+        .boite {
+            width: 100%;
+            color: inherit;
+            text-decoration: none;
         }
 
         .hebergements-and-populaires {
@@ -750,8 +764,15 @@ footer li {
             background-color: white!important;
         }
     
+        .hebergements-cards {
+            flex-direction: column;
+            align-items: baseline;
+        }
+
         .hebergements-cards .card {
             min-width: 255px;
+            width: 100%;
+            max-width: 690px;
           }
 
         .populaires {
@@ -778,32 +799,43 @@ footer li {
             font-size: 13px;
         }
 
+        .activites {
+            width: 116%;
+        }
+
         .activites-cards {
-            flex-direction: row;
+            flex-direction: column;
             align-items: center;
-            width: 75%;  
+            width: 75%;
             box-sizing: border-box;
+            flex-wrap: inherit;
         }
     
         .activites-cards .card {
-            max-width: 290px;
+            max-width: 690px;
             margin-left: 2%;
             min-width: 290px;
             margin-bottom: 7%;
-
+            width: 100%;
+            justify-content: center;
+            flex-direction: column;
+            
         }
 
         .activites-cards img {
             min-width: 290px;
+            max-width: 690px;
+            width: 100%;
         }
         
         .activites-cards .card-content {
             height: 55px;
         }
 
+
         .footer {
                 position: relative;
-                bottom: -635px;
+                bottom: -675px;
                 left: 0;
                 right: 0;
                 width: 100%;
